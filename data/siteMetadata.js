@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Portfolio',
-  author: 'Jeff Ou',
-  headerTitle: 'Jeff Ou',
+  author: 'Jiajin Ou',
+  headerTitle: 'Jiajin Ou',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'ojn2014520@gmail.com',
+  email: 'jiajin.webdeveloper@gmail.com',
   github: 'https://github.com/pophero110',
   // twitter: 'https://twitter.com/Twitter',
   // facebook: 'https://facebook.com',
