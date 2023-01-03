@@ -1,11 +1,11 @@
 ---
 name: Jiajin Ou
-avatar: /static/images/avatar.png
+avatar: /static/images/avatar.jpeg
 occupation: Fullstack Web Developer
 # company: Stanford University
 email: jiajin.webdeveloper@gmail.com
 # twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com/in/jiajin-ou-87330a1b1'
+linkedin: https://www.linkedin.com/in/jiajin-ou-87330a1b1/
 github: https://github.com/pophero110
 #TODO: add resume
 ---

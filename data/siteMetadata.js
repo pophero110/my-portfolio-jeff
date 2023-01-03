@@ -8,14 +8,14 @@ const siteMetadata = {
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/avatar.jpeg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'jiajin.webdeveloper@gmail.com',
   github: 'https://github.com/pophero110',
   // twitter: 'https://twitter.com/Twitter',
   // facebook: 'https://facebook.com',
   // youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com/in/jiajin-ou-87330a1b1',
+  linkedin: 'https://www.linkedin.com/in/jiajin-ou-87330a1b1/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
