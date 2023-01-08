@@ -13,3 +13,7 @@ summary: Good writing make you a good communicator!
 ### A Reminder
 
 ### Orgainze the infomationuse-airtable-as-free-database
+
+### Writting Assistant Tool
+
+1. [Dictionary Completion](https://github.com/yzhang-gh/vscode-dic-completion): for people like ESL. Word completion.
