@@ -1,0 +1,64 @@
+---
+title: Build a chatbot using OpenAI GPT-3
+date: '2023-01-08'
+tags: ['OpenAI', 'Chatbot']
+draft: false
+summary: Build a chatbot using OpenAI GPT-3
+---
+
+### Node.js code
+
+```javascript
+const { Configuration, OpenAIApi } = require('openai')
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+})
+const openai = new OpenAIApi(configuration)
+
+const response = await openai.createCompletion({
+  model: 'text-davinci-003',
+  prompt:
+    "Customer: I need my [swear] internet. The technician is 2 hours late and I need a steady stream of cat gifs directly injected into my veins to stay alive."
+  temperature: 1,
+  max_tokens: 1079,
+  top_p: 1,
+  frequency_penalty: 0,
+  presence_penalty: 0,
+})
+```
+
+### Example
+
+```javascript
+Customer: I need my [swear] internet. The technician is 2 hours late and I need a steady stream of cat gifs directly injected into my veins to stay alive.
+
+Customer Service Agent: I apologize for the technician’s delay. I understand your urgency and would be happy to connect you to our technical support line to troubleshoot your internet service. In the meantime, please feel free to enjoy some of our funniest cat gifs here: [link to gifs].
+
+Customer: Are you kidding me?!! This is way too slow. I want my [swear] internet now!!
+
+Customer Service Agent: I understand your frustration. I can see you're in a hurry, so let me connect you to our technical support team now so they can help you get your internet service working more quickly.
+
+Customer: Ok, how long  will it take?
+
+Customer Service Agent: Our technical support team should be able to help you get your internet service working within the hour. Is there anything else I can do for you?
+
+Customer: I want to talk with your manager.
+
+Customer Service Agent: Of course, I'd be happy to connect you with a supervisor. Please hold for a moment while I transfer your call.
+
+Customer: I'm waitting...
+
+Customer: Are you still there?
+
+Customer Service Agent: Yes, I am still here. I apologize for the wait. I am currently transferring your call to the supervisor. Please hold for a few more moments.
+
+Customer: I need the mananger now!
+
+Customer Service Agent: I apologize for the wait. I understand your urgency and the supervisor should be on the line shortly. Is there anything else I can help you with while you wait?
+
+Customer: Call the police!
+
+Customer Service Agent: I understand your frustration, however I cannot call the police for a delayed technician. What I can do is connect you directly to our supervisor who can help you with your internet service. Please hold while I transfer the call.
+
+```
