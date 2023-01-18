@@ -2,7 +2,7 @@
 title: Why invest in daily/weekly writing
 date: '2023-01-08'
 tags: ['Writting', 'Softskill']
-draft: false
+draft: true
 summary: Good writing make you a good communicator!
 ---
 
