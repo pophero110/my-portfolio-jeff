@@ -14,9 +14,9 @@ Follow the instructions in [Usage section](https://github.com/RusDyn/chatgpt_nes
 
 ### Install [Ngrok](https://dashboard.ngrok.com/get-started/setup)
 
-![](2023-01-19-20-51-53.png)
+![](/public/static/images/2023-01-19-20-51-53.png)
 _A running Ngrok HTTP tunnel terminal_
-![](2023-01-19-20-54-05.png)
+![](/public/static/images/2023-01-19-20-54-05.png)
 
 > Make sure the Nestjs server is listening to localhost:80
 
@@ -26,11 +26,11 @@ _Say hello to chatgpt_
 
 ### Start the server to 'talking' with chatgpt in background
 
-![](2023-01-19-20-59-47.png)
+![](/public/static/images/2023-01-19-20-59-47.png)
 
 ### Using the forward host from Ngrok terminal
 
-![](2023-01-19-21-04-13.png)
+![](/public/static/images/2023-01-19-21-04-13.png)
 
 ```js
 curl https://710f-2601-243-a00-19b0-e12e-adb5-23f2-ee36.ngrok.io/sendMessage?text=hello
