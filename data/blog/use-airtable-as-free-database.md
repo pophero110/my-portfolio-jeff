@@ -2,7 +2,7 @@
 title: Use airtable as a database
 date: '2023-01-08'
 tags: ['OpenAI', 'Chatbot']
-draft: false
+draft: true
 summary:
 ---
 

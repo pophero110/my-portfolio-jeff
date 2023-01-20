@@ -1,0 +1,85 @@
+---
+title: Build a public local chatgpt server on your PC!
+date: '2023-01-08'
+tags: ['Chatgpt', 'Nestjs', 'Ngrok']
+draft: false
+summary:
+---
+
+# Setup
+
+### Install chatgpt Nestjs server
+
+Follow the instructions in [Usage section](https://github.com/RusDyn/chatgpt_nestjs_server)
+
+### Install [Ngrok](https://dashboard.ngrok.com/get-started/setup)
+
+![](2023-01-19-20-51-53.png)
+_A running Ngrok HTTP tunnel terminal_
+![](2023-01-19-20-54-05.png)
+
+> Make sure the Nestjs server is listening to localhost:80
+
+# Basic Example
+
+_Say hello to chatgpt_
+
+### Start the server to 'talking' with chatgpt in background
+
+![](2023-01-19-20-59-47.png)
+
+### Using the forward host from Ngrok terminal
+
+![](2023-01-19-21-04-13.png)
+
+```js
+curl https://710f-2601-243-a00-19b0-e12e-adb5-23f2-ee36.ngrok.io/sendMessage?text=hello
+
+{"response":"Hello! How can I help you today?\n","conversationId":"c8095d8d-d4fe-41a5-aae1-1e12539f83ad","messageId":"23cd7c3a-0f68-404c-8d78-9b2c3348e27a"}
+```
+
+# Real World Usage
+
+_generate visa application cover letter_
+
+```js
+Could you write a 250 words visa application cover letter based on the data below:
+Where do you live?
+United Kingdom 🇬🇧
+Where are you travelling to?
+Greece
+Visa type
+Tourist
+Travel on...
+February 9, 2023
+Returning on...
+January 17, 2023
+I'm travelling because... (go into detail)
+I once visited Santorini in 2021 with my partner and I had an amazing time but unfortunately we didn’t have enough time to explore the city. My main purpose of travel is to explore the magnificent sights with friends.
+Personal details
+preciousarikeri@gmail.com
+Full Name
+Precious Voke Arikeri
+Occupation Status
+Student
+```
+
+```js
+curl https://710f-2601-243-a00-19b0-e12e-adb5-23f2-ee36.ngrok.io/sendMessage?text=Could+you+write+a+250+words+visa+application+cover+letter+based+on+the+data+below%3A%0D%0AWhere+do+you+live%3F%0D%0AUnited+Kingdom+%F0%9F%87%AC%F0%9F%87%A7%0D%0AWhere+are+you+travelling+to%3F%0D%0AGreece%0D%0AVisa+type%0D%0ATourist%0D%0ATravel+on...%0D%0AFebruary+9%2C+2023%0D%0AReturning+on...%0D%0AJanuary+17%2C+2023%0D%0AI%27m+travelling+because...+%28go+into+detail%29%0D%0AI+once+visited+Santorini+in+2021+with+my+partner+and+I+had+an+amazing+time+but+unfortunately+we+didn%E2%80%99t+have+enough+time+to+explore+the+city.+My+main+purpose+of+travel+is+to+explore+the+magnificent+sights+with+friends.%0D%0APersonal+details%0D%0Apreciousarikeri%40gmail.com%0D%0AFull+Name%0D%0APrecious+Voke+Arikeri%0D%0AOccupation+Status%0D%0AStudent
+
+
+Dear Sir/Madam,
+
+I am writing to apply for a tourist visa to Greece. My name is Precious Voke Arikeri and I currently reside in the United Kingdom. I am planning to travel to Greece on February 9, 2023 and return on January 17, 2023.
+
+The main purpose of my travel is to explore the magnificent sights of Greece with my friends. I had the opportunity to visit Santorini in 2021 with my partner and I had an amazing time, but unfortunately, we did not have enough time to explore the city fully. I am eager to return and experience more of the culture and history that Greece has to offer.
+
+I am currently a student and my occupation status is student. My contact email address is preciousarikeri@gmail.com
+
+I assure you that I am fully able to financially support myself during my stay in Greece and that I have no intention of overstaying my visa. I am also able to provide any additional documents that may be required.
+
+Thank you for your time and consideration. I look forward to the opportunity to visit Greece.
+
+Sincerely,
+Precious Voke Arikeri.
+```
