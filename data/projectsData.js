@@ -10,7 +10,7 @@ const projectsData = [
   {
     title: 'Letter.io',
     description: 'Letter writing app',
-    tool: 'Nest.js + Prisma + NextAuth.js + MongoDb',
+    tool: 'Nest.js + Prisma + NextAuth.js + MongoDb + UI Design with Figma',
     imgSrc: '/static/images/hero-background.png',
     href: 'https://letterio-web.vercel.app/',
     repo: 'https://github.com/pophero110/letterio-web',
